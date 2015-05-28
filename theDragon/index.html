@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The Dragon!</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="impress">
+        <div id="intro" class="step slide">
+            <div class="slide-text">
+                <p>You are on a planet full of dragons. In front of you,</p>
+                <p>you see two caves. In one cave, the dragon is friendly</p>
+                <p>and will share his treasure with you. The other dragon</p>
+                <p>is greedy and hungry, and will eat you on sight.</p>
+                <br />
+                <p>Which cave do you go into?</p>
+                <p><a href="#cave1">CAVE 1</a></p>
+                <p>or</p>
+                <p><a href="#cave2">CAVE 2</a></p>
+            </div>
+        </div>
+        <div id="cave1" class="step slide" data-x="-800" data-y="-400">
+            <div class="slide-text">
+                <p>You approach the cave, it is dark and spooky.</p>
+                <p>A large red dragon jumps out in front of you!</p>
+                <p>He opens his jaws and...</p>
+                <br />
+                <p>Gobbles you down with one bite!</p>
+                <p><a href="#cave1left">go left</a></p>
+                <p>or</p>
+                <p><a href="#cave1leftfight">go right</a></p>
+            </div>
+            <p align="center"><a href="#intro">Back</a></p>
+        </div>
+        <div id="cave1left" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You suddenly find the treasure just behind the dragon</p>
+                <p>There only two possible ways for you to obtain it</p>
+                <p>The decision how you gonna take is ...</p>
+                <br />
+                <p>The dragon seems to be ready for a fight!</p>
+                <p><a href="#cave1leftfight">fight</a></p>
+                <p>or</p>
+                <p><a href="#cave1leftconv">convince</a></p>
+            </div>
+            <p align="center"><a href="#cave1">Back</a></p>
+        </div>
+        <div id="cave1leftfight" class="step slide" data-y="1500">
+            <div class="slide-text">
+
+
+                <p>You can start to fight</p>
+                <br />
+                <p>You can fight two positions</p>
+                <p><a href="#fighthead">fight head</a></p>
+                <p>or</p>
+                <p><a href="#fightfoot">fight foot</a></p>
+                <p align="center"><a href="#cave1left">Back</a></p>
+            </div>
+        </div>
+        <div id="fighthead" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>You died</p>
+
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <div id="fightfoot" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>You died</p>
+
+            </div>
+            <div class="menu">
+                <a href="#intro">START OVER</a>
+            </div>
+        </div>
+
+        <div id="cave1leftconv" class="step slide" data-y="-1500">
+            <div class="slide-text">
+
+
+                <p>You can start to convince</p>
+                <br />
+                <p>You can convince in two ways</p>
+                <p><a href="#mildconv">fight head</a></p>
+                <p>or</p>
+                <p><a href="#mildconv">fight foot</a></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- JavaScript Section -->
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
