@@ -7,98 +7,204 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body style="background-image:url(images/bg1.jpg); background-size:cover;">
+    <!-- the cover page-->
     <div id="impress">
         <div id="start" class="step slide">
             <div class="slide-text">
                 <p>Escaping from Dead</p>
-                <p><a href="#intro" class="slide">START</a></p>
+                <p><a href="#intro">START PALY</a></p>
             </div>
         </div>
+
+        <!-- the first page(1st decision level)-->
         <div id="intro" class="step slide">
             <div class="slide-text">
-                <p>Hi, my friend. You are on a planet of zombies,</p>
+                <p>Hi, my lucky friend. You are on a planet full of zombies,</p>
                 <p>And you are chased by a large number of zombies which want to hunt you.</p>
-                <p>Now you see two buildings. In one building, there is a powerful weapon which</p>
-                <p>you may use to kill all the zombies. While in other building,</p>
-                <p>the one thing which is waiting for you is only death!</p>
+                <p>Now you see two buildings you can hide. In one building, there is a powerful weapon which</p>
+                <p>you may use to protect yourself. While in the other building,</p>
+                <p>the only one thing which is waiting for you is death!</p>
                 <br />
                 <p>Which building do you go into?</p>
                 <p><a href="#hospital">Hospital...</a></p>
                 <p>or</p>
-                <p><a href="#threatre">Threatre...</a></p>
+                <p><a href="#theatre">Theatre...</a></p>
             </div>
         </div>
+
+        <!-- the hospital page(2nd decision level)-->
         <div id="hospital" class="step slide" data-x="-800" data-y="-400">
             <div class="slide-text">
                 <p>You approach the hospital, it is dark and spooky.</p>
                 <p>Two things come out in front of you: a electric saw and a hacking knife!</p>
-                <p>Your choice of which weapon to equip will directly determine your fate!</p>
+                <p>Your choice of which weapon to equip will determine your fate!</p>
                 <br />
                 <p>Be decisive and your don't have too much time! Your choice is...</p>
-                <p><a href="#saw">saw</a></p>
-                <p>or</p>
-                <p><a href="#knife">knife</a></p>
+                <div>
+                    <p><a href="#saw">saw</a></p>
+                    <p>or</p>
+                    <p><a href="#knife">knife</a></p>
+                </div>
             </div>
             <p align="center"><a href="#intro">Back</a></p>
         </div>
-        <div id="cave1left" class="step slide" data-x="1500">
+
+        <!-- the saw page(3rd decision level)-->
+        <div id="saw" class="step slide" data-x="1500">
             <div class="slide-text">
-                <p>You suddenly find the treasure just behind the dragon</p>
-                <p>There only two possible ways for you to obtain it</p>
-                <p>The decision how you gonna take is ...</p>
+                <p>You suddenly find two zombies standing just behind you</p>
+                <p>There only two possible ways for you to use the weapon</p>
+                <p>The position how you gonna attack the zombies is ...</p>
                 <br />
-                <p>The dragon seems to be ready for a fight!</p>
-                <p><a href="#cave1leftfight">fight</a></p>
+                <p>The zombies seems to be very hungry!They rushed to approach you...</p>
+                <p><a href="#sawhead">cut on zombie's head</a></p>
                 <p>or</p>
-                <p><a href="#cave1leftconv">convince</a></p>
+                <p><a href="#sawhand">cut on its hand</a></p>
             </div>
-            <p align="center"><a href="#cave1">Back</a></p>
+            <p align="center"><a href="#hospital">Back</a></p>
         </div>
-        <div id="cave1leftfight" class="step slide" data-y="1500">
+
+        <!--result1-->
+        <div id="sawhead" class="step slide" data-x="800">
             <div class="slide-text">
-
-
-                <p>You can start to fight</p>
-                <br />
-                <p>You can fight two positions</p>
-                <p><a href="#fighthead">fight head</a></p>
-                <p>or</p>
-                <p><a href="#fightfoot">fight foot</a></p>
-                <p align="center"><a href="#cave1left">Back</a></p>
-            </div>
-        </div>
-        <div id="fighthead" class="step slide" data-x="800">
-            <div class="slide-text">
-                <p>You died</p>
-
+                <p>It is no use for zombies. ...You died</p>
             </div>
             <div class="menu">
-                <a href="#intro">START OVER</a>
+                <a href="#start">START OVER</a>
             </div>
         </div>
 
-        <div id="fightfoot" class="step slide" data-x="800">
+        <!--result2-->
+        <div id="sawhand" class="step slide" data-x="800">
             <div class="slide-text">
-                <p>You died</p>
-
+                <p>It is no use for zombies. ...You died</p>
             </div>
             <div class="menu">
-                <a href="#intro">START OVER</a>
+                <a href="#start">START OVER</a>
             </div>
         </div>
 
-        <div id="cave1leftconv" class="step slide" data-y="-1500">
+        <!-- the knife page(3rd decision level)-->
+        <div id="knife" class="step slide" data-x="1500">
             <div class="slide-text">
-
-
-                <p>You can start to convince</p>
+                <p>You suddenly find two zombies standing just behind you</p>
+                <p>There only two possible ways for you to use the weapon</p>
+                <p>The position how you gonna attack the zombies is ...</p>
                 <br />
-                <p>You can convince in two ways</p>
-                <p><a href="#mildconv">fight head</a></p>
+                <p>The zombies seems to be very hungry!They rushed to approach you...</p>
+                <p><a href="#knifehead">cut on zombie's head</a></p>
                 <p>or</p>
-                <p><a href="#mildconv">fight foot</a></p>
+                <p><a href="#knifehand">cut on its hand</a></p>
             </div>
+            <p align="center"><a href="#hospital">Back</a></p>
+        </div>
 
+        <!--result3-->
+        <div id="knifehead" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>It is no use for zombies. ...You died</p>
+            </div>
+            <div class="menu">
+                <a href="#start">START OVER</a>
+            </div>
+        </div>
+
+        <!--result4-->
+        <div id="knifehand" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>It is no use for zombies. ...You died</p>
+            </div>
+            <div class="menu">
+                <a href="#start">START OVER</a>
+            </div>
+        </div>
+
+
+        <!-- the theatre page(2nd decision level)-->
+        <div id="theatre" class="step slide" data-x="-800" data-y="-400">
+            <div class="slide-text">
+                <p>You approach the threatre, it is dark and in a mess.</p>
+                <p>You find two things useful: a pistol and an rifle!</p>
+                <p>Your choice of which weapon to equip will determine your fate!</p>
+                <br />
+                <p>Be decisive and your don't have too much time! Your choice is...</p>
+                <p><a href="#pistol">pistol</a></p>
+                <p>or</p>
+                <p><a href="#rifle">rifle</a></p>
+            </div>
+            <p align="center"><a href="#intro">Back</a></p>
+        </div>
+
+
+        <!-- the pistol page(3rd decision level)-->
+        <div id="pistol" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You suddenly find two zombies standing just behind you</p>
+                <p>There only two possible ways for you to use the weapon</p>
+                <p>The position how you gonna attack the zombies is ...</p>
+                <br />
+                <p>The zombies seems to be very hungry!They rushed to approach you...</p>
+                <p><a href="#pistolhead">shoot on zombie's head</a></p>
+                <p>or</p>
+                <p><a href="#pistolhand">shoot on its hand</a></p>
+            </div>
+            <p align="center"><a href="#hospital">Back</a></p>
+        </div>
+
+        <!--result5-->
+        <div id="pistolhead" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>It is no use for zombies. ...You died</p>
+            </div>
+            <div class="menu">
+                <a href="#start">START OVER</a>
+            </div>
+        </div>
+
+        <!--result6-->
+        <div id="pistolhand" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>It is no use for zombies. ...You died</p>
+            </div>
+            <div class="menu">
+                <a href="#start">START OVER</a>
+            </div>
+        </div>
+
+        <!-- the rifle page(3rd decision level)-->
+        <div id="rifle" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You suddenly find two zombies standing just behind you</p>
+                <p>There only two possible ways for you to use the weapon</p>
+                <p>The position how you gonna attack the zombies is ...</p>
+                <br />
+                <p>The zombies seems to be very hungry!They rushed to approach you...</p>
+                <p><a href="#riflehead">shoot on zombie's head</a></p>
+                <p>or</p>
+                <p><a href="#riflehand">shoot on its hand</a></p>
+            </div>
+            <p align="center"><a href="#hospital">Back</a></p>
+        </div>
+
+        <!--result7-->
+        <div id="riflehead" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>It is no use for zombies. But the zombies are scared....</p>
+                <p>Congrats! You are now their king!~~~~</p>
+            </div>
+            <div class="menu">
+                <a href="#start">START OVER</a>
+            </div>
+        </div>
+
+        <!--result8-->
+        <div id="riflehand" class="step slide" data-x="800">
+            <div class="slide-text">
+                <p>It is no use for zombies. ...You died</p>
+            </div>
+            <div class="menu">
+                <a href="#start">START OVER</a>
+            </div>
         </div>
     </div>
     <!-- JavaScript Section -->
