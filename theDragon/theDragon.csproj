@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="css\main.css" />
     <Content Include="css\reset.css" />
+    <Content Include="images\bg1.jpg" />
     <Content Include="index.html" />
     <Content Include="js\impress.js" />
     <Content Include="Web.config" />
