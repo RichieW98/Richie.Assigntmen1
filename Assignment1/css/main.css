@@ -6,7 +6,7 @@
 /* styling for slides that are inactive */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.0;
+    opacity: 0;
     -webkit-transition: opacity 1s ease;
     -moz-transition: opacity 1s ease;
     -ms-transition: opacity 1s ease;
@@ -19,25 +19,31 @@
         opacity: 1;
     }
 
+@font-face {
+    font-family: myFirstFont;
+    src:url(../css/BLOODY.ttf);
+}
 
 /* styling for all slides */
 .slide {
+    background-image:url(../images/bg3.jpg);
+    background-size:cover;
     display: block;
     width: 700px;
     height: 600px;
     padding: 40px 60px;
-    background-color: white;
+    
     border: 1px solid rgba(0, 0, 0, .3);
-    color: rgb(52, 52, 52);
+    color:#ff0000;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
     border-radius: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-family: myFirstFont;
+    font-size: 25px;
 }
 
     /* styling for slide paragraphs */
     .slide p {
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 30px;
         line-height: 30px;
     }
@@ -66,4 +72,12 @@ div.menu {
     border-top: 2px solid black;
     padding-top: 25px;
     text-align: center;
+    font-size:large;
+}
+
+
+.start{
+    font-size:40px;
+    align-content:center;
+    text-align:center;
 }

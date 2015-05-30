@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\BLOODY.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -67,7 +68,13 @@
   <ItemGroup>
     <Content Include="css\main.css" />
     <Content Include="css\reset.css" />
+    <Content Include="images\bg3.jpg" />
+    <Content Include="images\giphy.gif" />
+    <Content Include="images\giphy1.gif" />
+    <Content Include="images\title.jpg" />
     <Content Include="images\bg1.jpg" />
+    <Content Include="images\bg2.jpg" />
+    <Content Include="images\zomb.gif" />
     <Content Include="index.html" />
     <Content Include="js\impress.js" />
     <Content Include="Web.config" />
